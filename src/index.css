@@ -65,7 +65,7 @@
   --text-white: #D5E1E9;
 }
 
-.text-white{
+.text-white {
   color: var(--text-white);
 }
 
@@ -143,6 +143,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @layer base {

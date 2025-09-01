@@ -19,8 +19,8 @@ export const Main = () => {
 				</div>
 
 				<div className='flex flex-col sm:flex-row gap-4 justify-center'>
-					<Button size='lg' className='text-lg px-8'>
-						Стать клиентом
+					<Button asChild size='lg' className='text-lg px-8'>
+						<a href='#ready'>Стать клиентом</a>
 					</Button>
 					<Button
 						variant='outline'

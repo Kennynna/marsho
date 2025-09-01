@@ -1,5 +1,6 @@
 import { ProductSlider } from '@/components/product-slider'
 import { CatalogHero } from '@/components/catalog-hero'
+import { useEffect } from 'react'
 
 // Mock data for products
 const aromatizerProducts = [
@@ -188,10 +189,15 @@ const coffeeProducts = [
 ]
 
 export default function CatalogPage() {
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'auto', // можно поставить 'smooth' для плавной прокрутки
+		})
+	}, [])
 	return (
 		<div className='min-h-screen bg-background container mx-auto'>
-			
-
 			<main className='container mx-auto px-4 py-8 space-y-16'>
 				{/* Hero Section */}
 				<CatalogHero />
@@ -223,10 +229,7 @@ export default function CatalogPage() {
 						accentColor='text-chart-5'
 					/>
 				</div>
-
-				
 			</main>
-
 		</div>
 	)
 }

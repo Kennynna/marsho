@@ -36,7 +36,7 @@ export default function HomePage() {
 			<footer className='border-t border-border mt-16 mb-10 pt-4'>
 				<section className='text-center space-y-8'>
 					<div>
-						<h2 className='text-2xl font-bold mb-2'>
+						<h2 className='text-2xl font-bold mb-2' id='ready'>
 							Готовы к сотрудничеству?
 						</h2>
 						<p className='text-muted-foreground'>
