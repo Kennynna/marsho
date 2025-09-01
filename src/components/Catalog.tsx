@@ -32,6 +32,35 @@ const aromatizerProducts = [
 		image: '/leather-scent-barrel-car-air-freshener.png',
 		description: 'Стильный ароматизатор в форме бочки с запахом кожи',
 	},
+	{
+		id: '21',
+		name: "Ароматизатор картонный 'Новая машина'",
+		price: 'от 15 ₽',
+		image: '/car-air-freshener-cardboard-hanging.png',
+		description:
+			'Классический картонный ароматизатор с долговременным эффектом',
+	},
+	{
+		id: '22',
+		name: "Ароматизатор-мешочек 'Лаванда'",
+		price: 'от 45 ₽',
+		image: '/lavender-scent-bag-car-freshener.png',
+		description: 'Натуральный мешочек с ароматом лаванды для автомобиля',
+	},
+	{
+		id: '33',
+		name: "Спрей-ароматизатор 'Океан'",
+		price: 'от 120 ₽',
+		image: '/ocean-spray-car-air-freshener-bottle.png',
+		description: 'Спрей с морским ароматом, 50мл',
+	},
+	{
+		id: '44',
+		name: "Ароматизатор-бочка 'Кожа'",
+		price: 'от 85 ₽',
+		image: '/leather-scent-barrel-car-air-freshener.png',
+		description: 'Стильный ароматизатор в форме бочки с запахом кожи',
+	},
 ]
 
 const pendantProducts = [

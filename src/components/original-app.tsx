@@ -16,18 +16,8 @@ const photos = [
   },
 ]
 
-interface SaleData {
-  week: number[]
-  month: number[]
-}
 
-const salesData: SaleData = {
-  week: [120, 160, 180, 150, 210, 260, 300],
-  month: [
-    80, 95, 110, 130, 160, 180, 210, 250, 260, 300, 340, 380, 410, 430, 470, 520, 540, 560, 590, 610, 640, 690, 710,
-    750, 770, 800, 820, 860, 900, 940,
-  ],
-}
+
 
 function Header() {
   return (
@@ -70,13 +60,18 @@ function Hero() {
   )
 }
 
-function Stat({ value, label }) {
-  return (
-    <div className="flex flex-col items-start">
-      <div className="text-xl font-semibold text-[var(--text)]">{value}</div>
-      <div className="text-[var(--muted)] text-sm">{label}</div>
-    </div>
-  )
+type StatProps = {
+	value: string
+	label: string
+}
+
+function Stat({ value, label }: StatProps) {
+	return (
+		<div className='flex flex-col items-start'>
+			<div className='text-xl font-semibold text-[var(--text)]'>{value}</div>
+			<div className='text-[var(--muted)] text-sm'>{label}</div>
+		</div>
+	)
 }
 
 function About() {

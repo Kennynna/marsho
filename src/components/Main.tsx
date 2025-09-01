@@ -1,8 +1,6 @@
 import { ClientGrowthChart } from '@/components/client-growth-chart'
 import { BusinessAdvantages } from '@/components/business-advantages'
-import { FuturePlans } from '@/components/future-plans'
 import { Card, CardContent } from '@/components/ui/card'
-import { Phone, Mail, MapPin } from 'lucide-react'
 import { Button } from './ui/button'
 
 export const Main = () => {
@@ -75,38 +73,9 @@ export const Main = () => {
 			<BusinessAdvantages />
 
 			{/* Future Plans */}
-			<FuturePlans />
+			{/* <FuturePlans /> */}
 
 			{/* Contact Section */}
-			<section className='text-center space-y-8'>
-				<div>
-					<h2 className='text-2xl font-bold mb-2'>Готовы к сотрудничеству?</h2>
-					<p className='text-muted-foreground'>
-						Свяжитесь с нами для обсуждения условий поставок
-					</p>
-				</div>
-
-				<div className='grid gap-4 md:grid-cols-3 max-w-2xl mx-auto'>
-					<Card>
-						<CardContent className='p-6 text-center'>
-							<Phone className='h-6 w-6 text-primary mx-auto mb-2' />
-							<div className='font-medium'>+7 (900) 123-45-67</div>
-						</CardContent>
-					</Card>
-					<Card>
-						<CardContent className='p-6 text-center'>
-							<Mail className='h-6 w-6 text-primary mx-auto mb-2' />
-							<div className='font-medium'>sales@tk-region.ru</div>
-						</CardContent>
-					</Card>
-					<Card>
-						<CardContent className='p-6 text-center'>
-							<MapPin className='h-6 w-6 text-primary mx-auto mb-2' />
-							<div className='font-medium'>КБР, Грозный</div>
-						</CardContent>
-					</Card>
-				</div>
-			</section>
 		</main>
 	)
 }

@@ -34,14 +34,18 @@ export function ProductSlider({
 
 	useEffect(() => {
 		if (!swiper || !prevRef.current || !nextRef.current) return
-		swiper.params.navigation = {
-			...(swiper.params.navigation as any),
-			prevEl: prevRef.current,
-			nextEl: nextRef.current,
+
+		const nav = swiper.params.navigation
+		// nav: boolean | NavigationOptions | undefined
+		if (nav && typeof nav !== 'boolean') {
+			// тут nav уже NavigationOptions, без any
+			nav.prevEl = prevRef.current
+			nav.nextEl = nextRef.current
+
+			swiper.navigation.destroy()
+			swiper.navigation.init()
+			swiper.navigation.update()
 		}
-		swiper.navigation.destroy()
-		swiper.navigation.init()
-		swiper.navigation.update()
 	}, [swiper])
 
 	// при 4–5 карточках loop лучше выключить
@@ -116,14 +120,14 @@ export function ProductSlider({
 					<button
 						ref={prevRef}
 						aria-label='Previous'
-						className='h-12 w-12 rounded-full border border-border bg-transparent hover:bg-accent flex items-center justify-center transition-all duration-300 cursor-pointer'
+						className='h-12 w-12 rounded-full border border-border bg-transparent hover:bg-white flex items-center justify-center transition-all duration-300 cursor-pointer'
 					>
 						<ArrowLeft className={accentColor} />
 					</button>
 					<button
 						ref={nextRef}
 						aria-label='Next'
-						className='h-12 w-12 rounded-full border border-border bg-transparent hover:bg-accent flex items-center justify-center transition-all duration-300 cursor-pointer'
+						className='h-12 w-12 rounded-full border border-border bg-transparent hover:bg-white flex items-center justify-center transition-all duration-300 cursor-pointer'
 					>
 						<ArrowRight className={accentColor} />
 					</button>
