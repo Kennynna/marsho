@@ -9,12 +9,7 @@ import {
 	CartesianGrid,
 	Tooltip,
 } from 'recharts'
-import {
-	Card,
-	CardContent,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const clientGrowthData = [
 	{ month: 'Окт 2023', Клиенты: 0 },
@@ -79,7 +74,7 @@ export function ClientGrowthChart() {
 								tickLine={false}
 								axisLine={false}
 								interval='preserveStartEnd'
-								tick={{ fontSize: 10,fontWeight: '500', }}
+								tick={{ fontSize: 10, fontWeight: '500' }}
 							/>
 							<YAxis
 								stroke='oklch(94.3% 0.029 294.588)'
@@ -96,7 +91,6 @@ export function ClientGrowthChart() {
 									color: 'hsl(var(--card-foreground))',
 								}}
 								labelStyle={{ color: 'hsl(var(--muted-foreground))' }}
-                
 							/>
 							<Area
 								type='monotone'
@@ -109,11 +103,19 @@ export function ClientGrowthChart() {
 						</AreaChart>
 					</ResponsiveContainer>
 				</div>
-				<div className='mt-4 flex items-center justify-between text-sm text-muted-foreground gap-2'>
-					<span className='text-white font-bold'>
-						+2-3 новых клиента каждую неделю
+				<div className='mt-4 flex items-center justify-between text-sm text-muted-foreground gap-2 max-[773px]:flex-col max-[1920px]:justify-center'>
+					<span className='text-white font-bold border-border  p-2 rounded-2xl bg-[#292524] flex items-center gap-2 w-full justify-center max-[773px]:justify-between'>
+						Новых клиента каждую неделю
+						<span className='text-2xl font-bold text-[#be123c]  mb-1 '>
+							+2-3{' '}
+						</span>
 					</span>
-					<span className='text-white font-bold'>1150+ активных клиентов</span>
+					<span className='text-white font-bold  p-2  bg-[#292524] flex items-center gap-2 rounded-2xl  w-full justify-center max-[773px]:justify-between'>
+						Активных клиентов
+						<span className='text-2xl font-bold text-[#be123c]  mb-1'>
+							+1150{' '}
+						</span>
+					</span>
 				</div>
 			</CardContent>
 		</Card>

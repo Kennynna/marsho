@@ -2,6 +2,7 @@ import { ClientGrowthChart } from '@/components/client-growth-chart'
 import { BusinessAdvantages } from '@/components/business-advantages'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from './ui/button'
+import { SalesChart } from './salesChat'
 
 export const Main = () => {
 	return (
@@ -30,11 +31,6 @@ export const Main = () => {
 						Узнать больше
 					</Button>
 				</div>
-			</section>
-
-			{/* Client Growth Chart */}
-			<section>
-				<ClientGrowthChart />
 			</section>
 
 			{/* Key Stats */}
@@ -72,6 +68,13 @@ export const Main = () => {
 			{/* Business Advantages */}
 			<BusinessAdvantages />
 
+			<section>
+				<ClientGrowthChart />
+			</section>
+
+			<section>
+				<SalesChart />
+			</section>
 			{/* Future Plans */}
 			{/* <FuturePlans /> */}
 
