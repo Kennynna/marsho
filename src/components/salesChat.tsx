@@ -115,14 +115,14 @@ export function SalesChart() {
 				<div className='mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground max-[775px]:grid-cols-1  w-full'>
 					<span className='text-white font-bold p-2 rounded-2xl  bg-[#292524] flex items-center gap-2 w-full justify-center max-[773px]:justify-between'>
 						Всего позиций продано:{' '}
-						<span className='text-2xl font-bold text-[#be123c]'>
+						<span className='text-2xl font-bold text-[#16a34a]'>
 							{TOTAL_SALES.toLocaleString('ru-RU')}
 						</span>
 					</span>
 
 					<span className='text-white font-bold p-2 rounded-2xl   bg-[#292524] flex items-center gap-2 w-full justify-center max-[773px]:justify-between'>
 						В среднем за месяц:{' '}
-						<span className='text-2xl font-bold text-[#be123c]'>
+						<span className='text-2xl font-bold text-[#16a34a]'>
 							{avg.toLocaleString('ru-RU')}
 						</span>
 					</span>

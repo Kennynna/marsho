@@ -49,6 +49,15 @@
   --chart-4: oklch(0.627 0.265 303.9);
   /* Purple for charts */
   --chart-5: oklch(0.645 0.246 16.439);
+
+  --chart-6: oklch(0.720 0.190 200.0);
+  /* Бирюзовый / teal */
+  --chart-7: oklch(0.830 0.140 95.0);
+  /* Жёлтый для графиков */
+  --chart-8: oklch(0.680 0.220 342.0);
+  /* Розовый / fuchsia */
+  --chart-9: oklch(0.590 0.210 220.0);
+  /* Небесно-голубой / sky */
   /* Red for charts */
   --radius: 0.625rem;
   --sidebar: oklch(0.216 0.006 56.043);
@@ -94,6 +103,13 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
+  --chart-6: oklch(0.720 0.190 200.0);
+  /* Бирюзовый / teal */
+  --chart-7: oklch(0.830 0.140 95.0);
+  /* Жёлтый для графиков */
+  --chart-8: oklch(0.680 0.220 342.0);
+  /* Розовый / fuchsia */
+  --chart-9: oklch(0.590 0.210 220.0);
   --sidebar: oklch(0.216 0.006 56.043);
   --sidebar-foreground: oklch(0.985 0.001 106.423);
   --sidebar-primary: oklch(0.488 0.243 264.376);

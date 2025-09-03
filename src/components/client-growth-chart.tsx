@@ -106,13 +106,13 @@ export function ClientGrowthChart() {
 				<div className='mt-4 flex items-center justify-between text-sm text-muted-foreground gap-2 max-[773px]:flex-col max-[1920px]:justify-center'>
 					<span className='text-white font-bold border-border  p-2 rounded-2xl bg-[#292524] flex items-center gap-2 w-full justify-center max-[773px]:justify-between'>
 						Новых клиента каждую неделю
-						<span className='text-2xl font-bold text-[#be123c]  mb-1 '>
+						<span className='text-2xl font-bold text-[#16a34a]  mb-1 '>
 							+2-3{' '}
 						</span>
 					</span>
 					<span className='text-white font-bold  p-2  bg-[#292524] flex items-center gap-2 rounded-2xl  w-full justify-center max-[773px]:justify-between'>
 						Активных клиентов
-						<span className='text-2xl font-bold text-[#be123c]  mb-1'>
+						<span className='text-2xl font-bold text-[#16a34a]  mb-1'>
 							+1150{' '}
 						</span>
 					</span>

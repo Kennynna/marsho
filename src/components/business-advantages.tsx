@@ -1,35 +1,43 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { TrendingUp, Users, Award, MapPin } from "lucide-react"
+import { Card, CardContent } from '@/components/ui/card'
+import { TrendingUp, Users, Award, MapPin } from 'lucide-react'
 
 const advantages = [
-  {
-    icon: <Award className="h-8 w-8 text-white" />,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80&auto=format&fit=crop",
-    title: "Качественные товары",
-    description: "Работаем только с проверенными поставщиками. Контроль качества на каждом этапе.",
-  },
-  {
-    icon: <Users className="h-8 w-8 text-white" />,
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&auto=format&fit=crop",
-    title: "Увеличение штата",
-    description: "Команда растет с каждым годом. Профессиональные менеджеры для каждого клиента.",
-  },
-  {
-    icon: <TrendingUp className="h-8 w-8 text-white" />,
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&auto=format&fit=crop",
-    title: "Конкурентные цены",
-    description: "Прямые поставки от производителей. Гибкая система скидок для постоянных клиентов.",
-  },
-  {
-    icon: <MapPin className="h-8 w-8 text-white" />,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80&auto=format&fit=crop",
-    title: "Дистрибьютерские товары",
-    description: "Эксклюзивные права на распространение популярных брендов в КБР и Грозном.",
-  },
+	{
+		icon: <Award className='h-8 w-8 text-white' />,
+		image:
+			'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80&auto=format&fit=crop',
+		title: 'Качественные товары',
+		description:
+			'Работаем только с проверенными поставщиками. Контроль качества на каждом этапе.',
+	},
+	{
+		icon: <Users className='h-8 w-8 text-white' />,
+		image:
+			'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&auto=format&fit=crop',
+		title: 'Увеличение штата',
+		description:
+			'Команда растет с каждым годом. Профессиональные менеджеры для каждого клиента.',
+	},
+	{
+		icon: <TrendingUp className='h-8 w-8 text-white' />,
+		image:
+			'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&auto=format&fit=crop',
+		title: 'Конкурентные цены',
+		description:
+			'Прямые поставки от производителей. Гибкая система скидок для постоянных клиентов.',
+	},
+	{
+		icon: <MapPin className='h-8 w-8 text-white' />,
+		image:
+			'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80&auto=format&fit=crop',
+		title: 'Дистрибьютерские товары',
+		description:
+			'Эксклюзивные права на распространение популярных брендов в КБР и Грозном.',
+	},
 ]
 
 export function BusinessAdvantages() {
-  return (
+	return (
 		<section className='w-full'>
 			<div className='mb-8 text-center'>
 				<h2 className='text-2xl font-bold mb-2'>Наши преимущества</h2>
@@ -59,8 +67,11 @@ export function BusinessAdvantages() {
 
 								{/* Content section */}
 								<div className='flex flex-col justify-center p-6 md:w-1/2 md:p-8'>
-									<div className=' block mb-4'>{advantage.icon}</div>
-									<h3 className=' text-xl md:text-3xl font-semibold mb-3 text-balance '>
+									<div className=' block mb-4 max-[767px]:hidden '>
+										{advantage.icon}
+									</div>
+									<h3 className=' text-xl md:text-3xl font-semibold mb-3 text-balance flex items-center gap-4'>
+										<span className='min-[768px]:hidden'>{advantage.icon}</span>
 										{advantage.title}
 									</h3>
 									<p className='text-muted-foreground leading-relaxed text-pretty'>

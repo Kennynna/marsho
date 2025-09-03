@@ -1,9 +1,10 @@
 import { Button } from '@/components/ui/button'
-import { Main } from './components/Main'
+import { Main } from './components/Home'
 import { Route, Routes, Link } from 'react-router'
 import CatalogPage from './components/Catalog'
 import { Phone, Send, MapPin } from 'lucide-react'
 import { Card, CardContent } from './components/ui/card'
+import CategoryPage from './components/CategoryPage'
 
 export default function HomePage() {
 	return (
@@ -18,7 +19,7 @@ export default function HomePage() {
 								Главная
 							</Button>
 						</Link>
-						<Link to='catalog'>
+						<Link to='/catalog'>
 							<Button variant='outline' size='sm'>
 								Каталог
 							</Button>
@@ -29,8 +30,10 @@ export default function HomePage() {
 
 			<Routes>
 				<Route path='/' element={<Main />} />
-				<Route path='catalog' element={<CatalogPage />} />
+				<Route path='/catalog' element={<CatalogPage />} />
+				<Route path='/category-page/:pid' element={<CategoryPage />} />
 			</Routes>
+
 			{/* Footer */}
 
 			<footer className='border-t border-border mt-16 mb-10 pt-4'>
@@ -44,7 +47,7 @@ export default function HomePage() {
 						</p>
 					</div>
 
-					<div className='grid gap-4 md:grid-cols-3 max-w-2xl mx-auto'>
+					<div className='grid gap-4 md:grid-cols-3 max-w-2xl mx-auto p-4'>
 						<Card>
 							<CardContent className='p-6 text-center'>
 								<Phone className='h-6 w-6 text-primary mx-auto mb-2' />

@@ -3,6 +3,7 @@ import { BusinessAdvantages } from '@/components/business-advantages'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from './ui/button'
 import { SalesChart } from './salesChat'
+// import RunningLightsSVG from './Svgitem'
 
 export const Main = () => {
 	return (
@@ -75,10 +76,7 @@ export const Main = () => {
 			<section>
 				<SalesChart />
 			</section>
-			{/* Future Plans */}
-			{/* <FuturePlans /> */}
-
-			{/* Contact Section */}
+			{/* <RunningLightsSVG /> */}
 		</main>
 	)
 }

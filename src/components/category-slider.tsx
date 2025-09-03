@@ -8,8 +8,6 @@ import 'swiper/css'
 
 import { Card, CardContent } from '@/components/ui/card'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { Button } from './ui/button'
-import { Link } from 'react-router'
 
 interface Product {
 	id: string
@@ -20,17 +18,13 @@ interface Product {
 }
 
 interface ProductSliderProps {
-	title: string
 	products: Product[]
 	accentColor?: string
-	id: number
 }
 
-export function ProductSlider({
-	title,
+export function CategorySlider({
 	products,
 	accentColor = 'text-primary',
-	id,
 }: ProductSliderProps) {
 	const prevRef = useRef<HTMLButtonElement | null>(null)
 	const nextRef = useRef<HTMLButtonElement | null>(null)
@@ -57,13 +51,6 @@ export function ProductSlider({
 
 	return (
 		<div className='space-y-6'>
-			<div className='flex items-center justify-between  rounded-2xl'>
-				<h2
-					className={`text-4xl font-bold text-balance ${accentColor} text-center`}
-				>
-					{title}
-				</h2>
-			</div>
 
 			<div className='w-full'>
 				<Swiper
@@ -124,15 +111,7 @@ export function ProductSlider({
 					))}
 				</Swiper>
 
-				<div className='flex justify-between gap-2 mt-4'>
-					<Link to={`/category-page/${id}`}>
-						<Button
-							className={`bg-[#1c1917] border-white/10 border p-5 text-xl  cursor-pointer hover:bg-[#1c19177f]`}
-						>
-							Подробная информация
-						</Button>
-					</Link>
-
+				<div className='flex justify-end gap-2 mt-4 w-full'>
 					<div className='flex items-center gap-4'>
 						<button
 							ref={prevRef}
