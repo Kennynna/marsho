@@ -4,6 +4,7 @@ import { Badge } from './ui/badge'
 interface ProductDetailsProps {
 	diversity: string[]
 	mainImgUrl: string
+	companyDesc: string
 }
 export const ProductDetails = ({
 	diversity,
@@ -18,7 +19,7 @@ export const ProductDetails = ({
 						<img
 							src={mainImgUrl}
 							alt='Разнообразие попкорна и сладостей'
-							className='w-full h-full object-cover rounded-xl brightness-85'
+							className='w-full h-full object-scale-down rounded-xl brightness-85'
 						/>
 					</div>
 				</div>
@@ -29,11 +30,6 @@ export const ProductDetails = ({
 						<h2 className='text-3xl md:text-4xl font-bold text-foreground'>
 							Премиальное качество
 						</h2>
-						<p className='text-lg text-muted-foreground text-pretty'>
-							Попкорн изготавливается из отборных зерен кукурузы с
-							использованием традиционных рецептов. Каждая партия проходит
-							строгий контроль качества.
-						</p>
 					</div>
 
 					<div className='grid gap-6'>
